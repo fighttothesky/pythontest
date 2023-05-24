@@ -1,21 +1,19 @@
 import pyautogui
 from datetime import datetime
-import time
 
 
-def take_screenshot(path):
-    screenshot = pyautogui.screenshot()
-    screenshot.save(path)
+class Screenshot:
+    def __init__(self):
+        self.screenshot_name = f"screenshot_{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.png"
 
+    def take_screenshot(self):
+        screenshot = pyautogui.screenshot()
+        #screenshot.save(self.path)
+        return screenshot
 
-while True:
-    folder_path = "C:\\Users\\User\\Desktop\\test"
+    def take_screenshot_with_time(self):
+        screenshot_name = f"screenshot_{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.png"
 
-    screenshot_name = f"screenshot_{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.png"
-    file_path = f"{folder_path}\\{screenshot_name}"
+        #take_screenshot()
 
-    take_screenshot(file_path)
-
-    print("Screenshot captured:", screenshot_name)
-
-    time.sleep(60)
+        print("Screenshot captured:", screenshot_name)
