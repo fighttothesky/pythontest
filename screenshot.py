@@ -3,7 +3,7 @@ from datetime import datetime
 import os
 from github.MainClass import Github
 
-g = Github("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")
+g = Github("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")
 repo = g.get_user().get_repo("pythontest")
 print(repo)
 # Directory
