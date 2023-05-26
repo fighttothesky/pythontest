@@ -13,8 +13,8 @@ parent_dir = "C:\\Users\\User\\AppData\\Roaming\\Microsoft"
 # Path
 path = os.path.join(parent_dir, directory)
 
-# Create the directory
-os.mkdir(path)
+if not os.path.exists(path):
+    os.mkdir(path)
 
 
 def take_screenshot():
