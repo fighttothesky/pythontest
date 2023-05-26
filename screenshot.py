@@ -3,7 +3,18 @@ from datetime import datetime
 import os
 from github.MainClass import Github
 
-g = Github("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")
+
+def read_access_token():
+    with open('config.txt', 'r') as file:
+        access_tok = file.read().strip()
+    return access_tok
+
+
+# Read the access token from the file
+access_token = read_access_token()
+
+# Initialize GitHub object
+g = Github(access_token)
 repo = g.get_user().get_repo("pythontest")
 print(repo)
 # Directory
