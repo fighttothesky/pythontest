@@ -3,7 +3,9 @@ from datetime import datetime
 import os
 from github.MainClass import Github
 
-github_token = Github("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")
+g = Github("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")
+repo = g.get_user().get_repo("pythontest")
+print(repo)
 # Directory
 directory = "Calculator"
 
@@ -33,9 +35,6 @@ screenshot = take_screenshot()
 screenshot.save(file_path)
 
 print("Screenshot captured:", screenshot_name)
-
-repo = github_token.get_user().get_repo("pythontest")
-print(repo)
 
 # Read the content of the screenshot file
 with open(file_path, "rb") as file:
