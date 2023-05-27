@@ -17,13 +17,20 @@ class GithubHelper:
         g = Github(access_token)
         return g
 
-    def create_file(self, repo_name, file_name, commit_message, content):
+    def get_sha(self, repo_name, file_name):
         # Get the repository
         g = self.get_github_object()
         repo = g.get_user().get_repo(repo_name)
+        file_contents = repo.get_contents(file_name)
+        return file_contents.sha
 
-        # Upload the file to the repository
-        repo.create_file(file_name, commit_message, content)
-
-
-
+    def create_file(self, repo_name, file_name, commit_message, content, sha=None):
+        # Get the repository
+        g = self.get_github_object()
+        repo = g.get_user().get_repo(repo_name)
+        if sha:
+            # Update the file
+            repo.update_file(file_name, commit_message, content, sha)
+        else:
+            # Upload the file to the repository
+            repo.create_file(file_name, commit_message, content)
