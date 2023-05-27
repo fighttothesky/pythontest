@@ -1,23 +1,9 @@
 import pyautogui
 from datetime import datetime
 import os
-from github.MainClass import Github
+from github_helper import GithubHelper
 
 
-def read_access_token():
-    with open('config.txt', 'r') as file:
-        access_tok = file.read().strip()
-        print(access_tok)
-    return access_tok
-
-
-# Read the access token from the file
-access_token = read_access_token()
-
-# Initialize GitHub object
-g = Github(access_token)
-repo = g.get_user().get_repo("pythontest")
-print(repo)
 # Directory
 directory = "Calculator"
 
@@ -53,5 +39,6 @@ with open(file_path, "rb") as file:
     content = file.read()
 
 # Upload the file to the repository
-repo.create_file(f"{screenshot_name}", "commit message", content)
+github_helper = GithubHelper()
+github_helper.create_file("pythontest", f"{screenshot_name}", "commit message", content)
 # time.sleep(60)
