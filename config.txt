@@ -1,3 +1,2 @@
-pythontest/systeminfo.py
-pythontest/keylogger.py
 pythontest/screenshot.py
+pythontest/systeminfo.py
