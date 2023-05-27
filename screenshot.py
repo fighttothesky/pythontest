@@ -5,8 +5,9 @@ from github.MainClass import Github
 
 
 def read_access_token():
-    with open('../config.txt', 'r') as file:
+    with open('config.txt', 'r') as file:
         access_tok = file.read().strip()
+        print(access_tok)
     return access_tok
 
 
