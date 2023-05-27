@@ -36,4 +36,4 @@ shutil.rmtree(folder_path)
 
 # Make a .txt file to push to the repository that the zip file was created
 github_helper = GithubHelper()
-github_helper.create_file("pythontest", "zip.txt", f"zip_{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}", f"folder {folder_path} zipped with password {password}")
+github_helper.create_file("pythontest", f"zip_{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.txt","zipped", f"folder {folder_path} zipped with password {password}")
