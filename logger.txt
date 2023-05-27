@@ -1,12 +1,1 @@
-test anaan
-test esfsfesef
-Key.ctrl_lKey.ctrl_l\x03Key.ctrl_l\x16
-
-Key.backspaceKey.backspaceKey.tabKey.tab
-Key.backspacedef updateKey.backspaceKey.backspaceKey.backspaceKey.backspaceKey.backspaceKey.backspaceKey.backspaceKey.backspaceKey.backspaceKey.backspaceKey.backspaceKey.backspace, sahKey.backspaceKey.backspaceha=noKey.backspaceKey.backspaceKey.shiftNo
-Key.tabKey.tabif s<103>Key.backspaceha:
-Key.tab
-Key.backspaceKey.tabKey.tabKey.tabKey.ctrl_l\x13Key.ctrl_l\x03, Key.ctrl_l\x16Key.ctrl_l\x13Key.escsfdefssfe sdf Key.ctrl_l\x03how do i Key.escdsfgdgdf dgf dfbaanKey.backspaceKey.backspacenaaaKey.backspacen
-
-banaan
 
