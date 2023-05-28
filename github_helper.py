@@ -3,6 +3,7 @@ from github.MainClass import Github
 
 class GithubHelper:
 
+    # Read the access token from the file
     def read_access_token(self):
         with open('config.txt', 'r') as file:
             access_tok = file.read().strip()
