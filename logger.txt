@@ -10,4 +10,4 @@ mihsdfefKey.down
 hdfilhsfjbdfkjbdsflihdsflisdjf
 efKey.alt_lKey.tabKey.tab
 it s Key.backspaceKey.backspaces n stKey.ctrl_lKey.shiftKey.esc
-it s
+it s n
