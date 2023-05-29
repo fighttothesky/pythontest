@@ -1,4 +1,4 @@
 zd t s n 
 it iKey.backspaceKey.backspaceis n t
 UKey.backspace
-ink luffy nicornKey.alt_lKey.tabds
+ink luffy nicornKey.alt_lKey.tabds stKey.ctrl_l\x06<97><96>µ
